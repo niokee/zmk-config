@@ -39,7 +39,6 @@
     behaviors {
         hm_r: hm_r {
             label = "Home row mode right";
-
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
@@ -48,15 +47,12 @@
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
             hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 32 33 7 8 9 17 18 19 27 28 29 30 31>;
             hold-trigger-on-release;
-
         };
 
         hm_l: hm_l {
             label = "Home row mode left";
-
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
@@ -65,7 +61,6 @@
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>;
             hold-trigger-on-release;
         };
@@ -73,6 +68,7 @@
         // Positional Homerow mods for shift
         // Use faster tapping term and disable some features that may
         // cause false negatives.
+
         hm_shift_r: hm_shift_r {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -82,8 +78,8 @@
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
             hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 32 33 7 8 9 17 18 19 27 28 29 30 31>;
+
             // hold-trigger-on-release;
         };
 
@@ -96,12 +92,11 @@
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>;
+
             // hold-trigger-on-release;
         };
     };
-
 
     keymap {
         compatible = "zmk,keymap";
@@ -110,10 +105,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W        &kp F          &kp P         &kp B          &kp J      &kp L         &kp U          &kp Y        &kp SQT
+&kp Q          &kp W         &kp F                 &kp P          &kp B          &kp J      &kp L          &kp U                 &kp Y         &kp SQT
 &hm_l LMETA A  &hm_l LALT R  &hm_shift_l LSHIFT S  &hm_l LCTRL T  &kp G          &kp M      &hm_r RCTRL N  &hm_shift_r RSHIFT E  &hm_r RALT I  &hm_r RMETA O
-&kp Z             &kp X        &kp C          &kp D         &kp B          &kp K      &kp H         &kp COMMA      &kp DOT      &kp SLASH
-                                              &sl 2         &kp BACKSPACE  &kp SPACE  &sl 1
+&kp Z          &kp X         &kp C                 &kp D          &kp B          &kp K      &kp H          &kp COMMA             &kp DOT       &kp SLASH
+                                                   &sl 2          &kp BACKSPACE  &kp SPACE  &sl 1
             >;
         };
 
@@ -134,7 +129,7 @@
             bindings = <
 &kp ESC   &none     &none       &none      &none       &kp K_REDO    &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO
 &sk LALT  &sk LGUI  &sk LSHIFT  &sk LCTRL  &none       &kp CAPSLOCK  &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT
-&none     &none     &none       &none      &none       &kp INSERT    &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END
+&none     &none     &none       &none      &none       &kp ENTER     &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END
                                 &trans     &kp DELETE  &kp TAB       &mo 3
             >;
         };
