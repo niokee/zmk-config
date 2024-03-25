@@ -116,10 +116,10 @@
 
         sym_layer {
             bindings = <
-&kp N1           &kp N2       &kp N3                 &kp N4           &kp N5       &kp N6         &kp N7    &kp N8     &kp N9          &kp N0
-&kp DOLLAR       &kp KP_PLUS  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp AT_SIGN  &kp PIPE       &kp LBKT  &kp EQUAL  &kp UNDERSCORE  &kp ASTERISK
-&kp EXCLAMATION  &kp POUND    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp TILDE    &kp AMPERSAND  &kp RBKT  &kp MINUS  &kp PERCENT     &kp CARET
-                                                     &mo 3            &trans       &trans         &trans
+&kp N1              &kp N2                  &kp N3                             &kp N4                  &kp N5       &kp N6         &kp N7                    &kp N8             &kp N9                      &kp N0
+&hm_l LMETA DOLLAR  &hm_l LEFT_ALT KP_PLUS  &hm_l LEFT_SHIFT LEFT_PARENTHESIS  &hm_l LCTRL LEFT_BRACE  &kp AT_SIGN  &kp SEMICOLON  &hm_r RCTRL LEFT_BRACKET  &hm_r RSHFT EQUAL  &hm_r RIGHT_ALT UNDERSCORE  &hm_r RMETA ASTERISK
+&kp EXCLAMATION     &kp POUND               &kp RIGHT_PARENTHESIS              &kp RIGHT_BRACE         &kp PIPE     &kp AMPERSAND  &kp RBKT                  &kp MINUS          &kp PERCENT                 &kp CARET
+                                                                               &mo 3                   &trans       &trans         &trans
             >;
         };
 
@@ -127,7 +127,7 @@
 
         ext_layer {
             bindings = <
-&kp ESC   &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_UNDO    &kp K_REDO    &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp ENTER
+&gresc    &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_UNDO    &kp K_REDO    &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp ENTER
 &sk LALT  &sk LGUI   &sk LSHIFT  &sk LCTRL    &kp CAPSLOCK  &kp CAPSLOCK  &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT
 &none     &none      &none       &none        &key_repeat   &key_repeat   &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END
                                  &trans       &kp DELETE    &kp TAB       &mo 3
