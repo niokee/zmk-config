@@ -127,10 +127,10 @@
 
         ext_layer {
             bindings = <
-&gresc    &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_UNDO    &kp K_REDO    &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp ENTER
-&sk LALT  &sk LGUI   &sk LSHIFT  &sk LCTRL    &kp CAPSLOCK  &kp CAPSLOCK  &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT
-&none     &none      &none       &none        &key_repeat   &key_repeat   &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END
-                                 &trans       &kp DELETE    &kp TAB       &mo 3
+&gresc     &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_UNDO    &kp K_REDO    &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp ENTER
+&sk LMETA  &sk LALT   &sk LSHIFT  &sk LCTRL    &kp CAPSLOCK  &kp CAPSLOCK  &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT
+&none      &none      &none       &none        &key_repeat   &key_repeat   &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END
+                                  &trans       &kp DELETE    &kp TAB       &mo 3
             >;
         };
 
