@@ -116,10 +116,10 @@
 
         sym_layer {
             bindings = <
-&none       &kp DOLLAR              &kp RIGHT_PARENTHESIS              &kp RIGHT_BRACE         &kp CARET      &kp TILDE    &kp RIGHT_BRACKET         &kp MINUS          &kp ASTERISK                &none
-&kp ESCAPE  &hm_l LEFT_ALT KP_PLUS  &hm_l LEFT_SHIFT LEFT_PARENTHESIS  &hm_l LCTRL LEFT_BRACE  &kp SEMICOLON  &kp COLON    &hm_r RCTRL LEFT_BRACKET  &hm_r RSHFT EQUAL  &hm_r RIGHT_ALT UNDERSCORE  &kp ENTER
-&none       &kp EXCLAMATION         &kp POUND                          &kp PIPE                &kp AT_SIGN    &key_repeat  &kp AMPERSAND             &kp PERCENT        &kp BACKSLASH               &none
-                                                                       &mo 3                   &trans         &trans       &trans
+&none               &kp DOLLAR              &kp RIGHT_PARENTHESIS              &kp RIGHT_BRACE         &kp CARET      &kp TILDE    &kp RIGHT_BRACKET         &kp MINUS          &kp ASTERISK                &none
+&hm_l LMETA ESCAPE  &hm_l LEFT_ALT KP_PLUS  &hm_l LEFT_SHIFT LEFT_PARENTHESIS  &hm_l LCTRL LEFT_BRACE  &kp SEMICOLON  &kp COLON    &hm_r RCTRL LEFT_BRACKET  &hm_r RSHFT EQUAL  &hm_r RIGHT_ALT UNDERSCORE  &hm_r RMETA ENTER
+&none               &kp EXCLAMATION         &kp POUND                          &kp PIPE                &kp AT_SIGN    &key_repeat  &kp AMPERSAND             &kp PERCENT        &kp BACKSLASH               &none
+                                                                               &mo 3                   &trans         &trans       &trans
             >;
         };
 
@@ -127,10 +127,10 @@
 
         ext_layer {
             bindings = <
-&gresc     &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_UNDO    &kp K_REDO    &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp ENTER
-&sk LMETA  &sk LALT   &sk LSHIFT  &sk LCTRL    &kp CAPSLOCK  &kp CAPSLOCK  &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT
-&none      &none      &none       &none        &key_repeat   &key_repeat   &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END
-                                  &trans       &kp DELETE    &kp TAB       &mo 3
+&kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO   &kp K_REDO    &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO
+&sk LMETA   &sk LALT   &sk LSHIFT  &sk LCTRL    &caps_word   &kp CAPSLOCK  &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT
+&none       &none      &none       &none        &key_repeat  &key_repeat   &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END
+                                   &trans       &kp DELETE   &kp TAB       &mo 3
             >;
         };
 
