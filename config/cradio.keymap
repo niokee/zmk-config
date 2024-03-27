@@ -154,7 +154,7 @@ ZMK_LAYER(base,
 
 ZMK_LAYER(sym,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    XXX           &kp DOLLAR    &kp RPAR      &kp RBRCE     &kp CARET       &kp TILDE     &kp RBKT      &kp MINUS          &kp ASTERISK &kp GRAVE
+    XXX           &kp DOLLAR    &kp RPAR      &kp RBRC     &kp CARET       &kp TILDE     &kp RBKT      &kp MINUS          &kp ASTERISK &kp GRAVE
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
    &hml LGUI ESC &hml LALT KP_PLUS &hml LSHFT LPAR &hml LCTRL LBRC &kp SEMI &kp COLON     &hmr RCTRL LBKT &hmr RSHFT EQUAL  &hmr RALT UNDERSCORE  &hmr RGUI ENTER
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
