@@ -76,7 +76,6 @@
     behaviors {
         num_word {
             layer = <NUM>;
-            continue-list = <BSCP DOT COMMA PLUS MINUS ASTERISK SLASH EQUAL>;
         };
 
         hm_r: hm_r {
