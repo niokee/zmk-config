@@ -17,16 +17,16 @@
         l_tog_settings_layer {
             timeout-ms = <300>;
             key-positions = <30 31>;
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
         };
 
         tog_gaming_layer {
-            bindings = <&tog 5>;
+            bindings = <&tog 6>;
             key-positions = <30 31 32 33>;
         };
 
         r_tog_settings_layer {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <32 33>;
             timeout-ms = <300>;
         };
@@ -108,49 +108,48 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W         &kp F           &kp P          &kp B         &kp J      &kp L          &kp U          &kp Y         &kp SQT
-&hm_l LMETA A  &hm_l LALT R  &hm_l LSHIFT S  &hm_l LCTRL T  &kp G         &kp M      &hm_r RCTRL N  &hm_r RSHFT E  &hm_r RALT I  &hm_r RMETA O
-&kp Z          &kp X         &kp C           &kp D          &kp V         &kp K      &kp H          &kp COMMA      &kp DOT       &kp SLASH
-                                             &sl 2          &smart_shift  &kp SPACE  &sl 1
+&kp Q          &kp W         &kp F           &kp P          &kp B         &kp J        &kp L          &kp U          &kp Y         &kp SQT
+&hm_l LMETA A  &hm_l LALT R  &hm_l LSHIFT S  &hm_l LCTRL T  &kp G         &kp M        &hm_r RCTRL N  &hm_r RSHFT E  &hm_r RALT I  &hm_r RMETA O
+&kp Z          &kp X         &kp C           &kp D          &kp V         &kp K        &kp H          &kp COMMA      &kp DOT       &kp SLASH
+                                             &sl 1          &smart_shift  &lt 4 SPACE  &sl 2
             >;
         };
-
-        // Numbers and high frequency symbols
 
         sym_layer {
             bindings = <
 &none               &kp DOLLAR              &kp RIGHT_PARENTHESIS              &kp RIGHT_BRACE         &kp CARET      &kp TILDE    &kp RIGHT_BRACKET         &kp MINUS          &kp ASTERISK                &kp GRAVE
 &hm_l LMETA ESCAPE  &hm_l LEFT_ALT KP_PLUS  &hm_l LEFT_SHIFT LEFT_PARENTHESIS  &hm_l LCTRL LEFT_BRACE  &kp SEMICOLON  &kp COLON    &hm_r RCTRL LEFT_BRACKET  &hm_r RSHFT EQUAL  &hm_r RIGHT_ALT UNDERSCORE  &hm_r RMETA ENTER
 &none               &kp EXCLAMATION         &kp POUND                          &kp PIPE                &kp AT_SIGN    &key_repeat  &kp AMPERSAND             &kp PERCENT        &kp BACKSLASH               &none
-                                                                               &mo 3                   &trans         &trans       &trans
+                                                                               &mo 4                   &trans         &trans       &trans
             >;
         };
-
-        // Main modifiers and arrow keys
 
         ext_layer {
             bindings = <
 &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)  &kp LC(Y)    &kp RC(Y)     &kp RC(V)  &kp RC(C)      &kp RC(X)    &kp RC(Z)
 &sk LMETA  &sk LALT   &sk LSHIFT  &sk LCTRL  &caps_word   &kp CAPSLOCK  &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT
 &none      &none      &none       &none      &key_repeat  &key_repeat   &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END
-                                  &trans     &kp DELETE   &kp TAB       &mo 3
+                                  &trans     &kp DELETE   &kp TAB       &mo 4
             >;
         };
 
-        // Function keys with modifiers
-
-        num_func_layer {
+        num_layer {
             bindings = <
-&kp N1     &kp N2    &kp N3      &kp N4     &kp N5   &kp N6   &kp N7     &kp N8     &kp N9    &kp N0
-&sk LMETA  &sk LALT  &sk LSHIFT  &sk LCTRL  &kp F11  &kp F12  &sk RCTRL  &sk RSHFT  &sk RALT  &kp RMETA
-&kp F1     &kp F2    &kp F3      &kp F4     &kp F5   &kp F6   &kp F7     &kp F8     &kp F9    &kp F10
-                                 &trans     &trans   &trans   &none
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans
             >;
         };
 
-        // Low frequency symbols.
-        // Used to type regional accents.
-        // Used to change the keyboard's settings.
+        func_layer {
+            bindings = <
+&kp F1    &kp F2    &kp F3      &kp F4     &kp F5   &kp F6   &kp F7     &kp F8     &kp F9    &kp F10
+&kp LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL  &kp F11  &kp F12  &sk RCTRL  &sk RSHFT  &sk RALT  &kp RMETA
+&trans    &trans    &trans      &trans     &trans   &trans   &trans     &trans     &trans    &trans
+                                &trans     &trans   &trans   &trans
+            >;
+        };
 
         settings_layer {
             bindings = <
@@ -166,7 +165,7 @@
 &kp TAB    &kp Q  &kp X  &kp E  &kp R      &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp A  &kp W  &kp D  &kp F      &trans  &trans  &trans  &trans  &trans
 &kp LCTRL  &kp Z  &kp S  &kp X  &kp C      &trans  &trans  &trans  &trans  &trans
-                         &mo 6  &kp SPACE  &trans  &trans
+                         &mo 7  &kp SPACE  &trans  &trans
             >;
         };
 
