@@ -116,7 +116,7 @@
 
         sym_layer {
             bindings = <
-&none               &kp DOLLAR              &kp RIGHT_PARENTHESIS              &kp RIGHT_BRACE         &kp CARET      &kp TILDE    &kp RIGHT_BRACKET         &kp MINUS          &kp ASTERISK                &none
+&none               &kp DOLLAR              &kp RIGHT_PARENTHESIS              &kp RIGHT_BRACE         &kp CARET      &kp TILDE    &kp RIGHT_BRACKET         &kp MINUS          &kp ASTERISK                &kp GRAVE
 &hm_l LMETA ESCAPE  &hm_l LEFT_ALT KP_PLUS  &hm_l LEFT_SHIFT LEFT_PARENTHESIS  &hm_l LCTRL LEFT_BRACE  &kp SEMICOLON  &kp COLON    &hm_r RCTRL LEFT_BRACKET  &hm_r RSHFT EQUAL  &hm_r RIGHT_ALT UNDERSCORE  &hm_r RMETA ENTER
 &none               &kp EXCLAMATION         &kp POUND                          &kp PIPE                &kp AT_SIGN    &key_repeat  &kp AMPERSAND             &kp PERCENT        &kp BACKSLASH               &none
                                                                                &mo 3                   &trans         &trans       &trans
