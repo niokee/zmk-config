@@ -17,7 +17,7 @@
 #define HRC_REPEAT &hml_repeat  LS(LCTRL) 0
 
 /* Gaming layer */
-/*ZMK_COMBO(gam_layer,   &tog GAM, LH0 LH1 RH0 RH1, DEF SYM EXT NUM FUNC, COMBO_TERM_FAST)*/
+ZMK_COMBO(gam_layer,   &tog GAM, LH0 LH1 RH0 RH1, DEF SYM EXT NUM FUNC, COMBO_TERM_FAST)
 
 /* Horizontal combos - left hand */
 ZMK_COMBO(esc,         &kp ESC,       LT3 LT2,     DEF SYM EXT NUM GAM GAM_SYM, COMBO_TERM_FAST)
