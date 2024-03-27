@@ -19,6 +19,8 @@
 #define GAM 6
 #define GAM_SYM 7
 
+
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -72,6 +74,11 @@
     };
 
     behaviors {
+        num_word {
+            layer = <NUM>;
+            continue-list = <BSCP DOT COMMA PLUS MINUS ASTERISK SLASH EQUAL>;
+        };
+
         hm_r: hm_r {
             label = "Home row mode right";
             compatible = "zmk,behavior-hold-tap";
@@ -115,18 +122,14 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             bidings = <&mo>, <&num_dance>;
-        } 
+        };
 
         num_dance {
             compatible = "zmk,behavior-tap-dance";
             tapping-term-ms = <200>;
             bindings = <&num_word>, <&sl NUM>;
-        }
+        };
 
-        num_word {
-            layer = <NUM>;
-            continue-list = <BSCP DOT COMMA PLUS MINUS ASTERISK SLASH EQUAL>;
-        }
         
         lt_spc {
             compatible = "zmk,behavior-hold-tap";
@@ -134,6 +137,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             bidings = <&mo>, <&spc_morhp>;
+        };
         
         spc_morhp: spc_morhp {
             compatible = "zmk,behavior-mod-morph";
