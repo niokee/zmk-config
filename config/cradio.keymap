@@ -43,12 +43,22 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <7 8>;
+            key-positions = <7 6>;
         };
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <8 9>;
+            key-positions = <8 7>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+        };
+
+        repeat {
+            bindings = <&key_repeat>;
+            key-positions = <12 13>;
         };
     };
 
