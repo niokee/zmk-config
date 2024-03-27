@@ -90,7 +90,7 @@ ZMK_BEHAVIOR(mt_end,  hold_tap,  bindings = <&masked_end>, <&kp>; MT_CORE)
 /* Caps-word, num-word */
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
-ZMK_BEHAVIOR(smart_shft, mod_morph,
+ZMK_BEHAVIOR(smart_shift, mod_morph,
     bindings = <&sk LSHFT>, <&caps_word>;
     mods = <(MOD_LSFT)>;
 )
