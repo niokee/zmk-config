@@ -10,7 +10,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -31,7 +30,7 @@
             key-positions = <32 33>;
             timeout-ms = <300>;
         };
-        
+
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
@@ -81,6 +80,15 @@
             hold-trigger-key-positions = <30 31 32 33 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33>;
             hold-trigger-on-release;
         };
+
+        smart_shift: smart_shift {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SMART_SHIFT";
+            bindings = <&sk LSHIFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -90,10 +98,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W         &kp F           &kp P          &kp B          &kp J      &kp L          &kp U          &kp Y         &kp SQT
-&hm_l LMETA A  &hm_l LALT R  &hm_l LSHIFT S  &hm_l LCTRL T  &kp G          &kp M      &hm_r RCTRL N  &hm_r RSHFT E  &hm_r RALT I  &hm_r RMETA O
-&kp Z          &kp X         &kp C           &kp D          &kp V          &kp K      &kp H          &kp COMMA      &kp DOT       &kp SLASH
-                                             &sl 2          &kp BACKSPACE  &kp SPACE  &sl 1
+&kp Q          &kp W         &kp F           &kp P          &kp B         &kp J      &kp L          &kp U          &kp Y         &kp SQT
+&hm_l LMETA A  &hm_l LALT R  &hm_l LSHIFT S  &hm_l LCTRL T  &kp G         &kp M      &hm_r RCTRL N  &hm_r RSHFT E  &hm_r RALT I  &hm_r RMETA O
+&kp Z          &kp X         &kp C           &kp D          &kp V         &kp K      &kp H          &kp COMMA      &kp DOT       &kp SLASH
+                                             &sl 2          &smart_shift  &kp SPACE  &sl 1
             >;
         };
 
