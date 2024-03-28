@@ -281,16 +281,16 @@
             bindings = <&num_word>, <&sl 3>;
         };
 
-        // lt_spc: lt_spc {
-        //     label = "ZB_lt_spc";
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <2>;
-        //     flavor = "balanced";
-        //     tapping-term-ms = <200>;
-        //     quick-tap-ms = <175>;
-        //     bindings = <&mo>, <&spc_morph>;
-        // };
-        
+        lt_spc: lt_spc {
+            label = "ZB_lt_spc";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&mo>, <&spc_morph>;
+        };
+
         spc_morph: spc_morph {
             label = "ZB_spc_morph";
             compatible = "zmk,behavior-mod-morph";
