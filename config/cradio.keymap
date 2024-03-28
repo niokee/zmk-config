@@ -262,25 +262,25 @@
             bindings = <&sk LSHFT>, <&caps_word>;
             mods = <(MOD_LSFT)>;
         };
-    //     
-    //     smart_num: smart_num {
-    //         label = "ZB_smart_num";
-    //         compatible = "zmk,behavior-hold-tap";
-    //         #binding-cells = <2>;
-    //         flavor = "balanced";
-    //         tapping-term-ms = <200>;
-    //         quick-tap-ms = <175>;
-    //         bindings = <&mo>, <&num_dance>;
-    //     };
-    //
-    //     num_dance: num_dance {
-    //         label = "ZB_num_dance";
-    //         compatible = "zmk,behavior-tap-dance";
-    //         #binding-cells = <0>;
-    //         tapping-term-ms = <200>;
-    //         bindings = <&num_word>, <&sl 3>;
-    //     };
-    //
+        
+        smart_num: smart_num {
+            label = "ZB_smart_num";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&mo>, <&num_dance>;
+        };
+
+        num_dance: num_dance {
+            label = "ZB_num_dance";
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&num_word>, <&sl 3>;
+        };
+
         // lt_spc: lt_spc {
         //     label = "ZB_lt_spc";
         //     compatible = "zmk,behavior-hold-tap";
