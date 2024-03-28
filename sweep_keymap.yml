@@ -14,8 +14,8 @@ layers:
     - {t: O, h: RGUI}
   - [Z, X, C, D, V, K, H, ',', ., /]
   - - {t: sym, h: sticky}
-    - '&smart_shift'
-    - '&lt_spc 4'
+    - {t: LSHFT, h: sticky, s: '&caps_word'}
+    - {t: SPACE, h: func, s: '&dot_spc'}
     - {t: ext, h: sticky}
   sym:
   - ['`', $, ), '}', ^, '~', ']', '-', '*', '']
@@ -56,7 +56,7 @@ layers:
     - PAGE DOWN
     - PAGE UP
     - {t: DEL, h: LC(DEL)}
-  - - {t: ▽, type: trans}
+  - - CANCEL
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: '&num_dance', h: num, type: held}
@@ -108,9 +108,9 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {type: held}
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
     - {t: ▽, type: trans}
   set:
   - ['', '', VOLUME UP, MUTE, VOLUME DOWN, VOL DN, MUTE, VOLUME UP, '', '']
