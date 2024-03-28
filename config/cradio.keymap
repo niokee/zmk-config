@@ -344,7 +344,7 @@
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)    &kp RC(Y)     &kp RC(V)          &kp RC(C)         &kp RC(X)        &kp RC(Z)
 &sk LGUI   &sk LALT   &sk LSHFT  &sk LCTRL  &caps_word   &kp CAPSLOCK  &mt_home 0 LEFT    &mt LC(END) DOWN  &mt LC(HOME) UP  &mt_end 0 RIGHT
 &none      &none      &none      &none      &key_repeat  &key_repeat   &mt LC(BSPC) BSPC  &kp PAGE_DOWN     &kp PAGE_UP      &mt LC(DEL) DEL
-                                 &trans     &trans       &trans        &num_word
+                                 &trans     &trans       &trans        &smart_num 3 0
             >;
         };
 
