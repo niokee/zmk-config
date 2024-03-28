@@ -5,31 +5,37 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
-&sk {
-    release-after-ms = <900>;
-    quick-release;
-};
+// &sk {
+//     release-after-ms = <900>;
+//     quick-release;
+// };
+//
+// &sl {
+//     ignore-modifiers;
+// };
+//
+// &lt {
+//     flavor = "balanced";
+//     tapping-term-ms = <200>;
+//     quick-tap-ms = <175>;
+// };
+//
+// &caps_word {
+//     /delete-property/ ignore-modifiers;
+// };
+//
+// &num_word {
+//     layers = <3>;
+//     continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+// };
+//
+// &mt { 
+//     flavor = "tap-preferred";
+//     tapping-term-ms = <220>;
+//     quick-tap-ms = <220>;
+//     hold-trigger-key-positions = <0>;
+// };
 
-&sl {
-    ignore-modifiers;
-};
-
-&lt {
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <175>;
-};
-
-&caps_word {
-    /delete-property/ ignore-modifiers;
-};
-
-&num_word {
-    layers = <3>;
-    continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
-};
-
-&mt { flavor = "tap-preferred"; tapping-term-ms = <220>; quick-tap-ms = <220>; hold-trigger-key-positions = <0>; };
 / { 
     combos { 
         compatible = "zmk,combos"; 
