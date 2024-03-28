@@ -281,15 +281,15 @@
     //         bindings = <&num_word>, <&sl 3>;
     //     };
     //
-        lt_spc: lt_spc {
-            label = "ZB_lt_spc";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            bindings = <&mo>, <&spc_morph>;
-        };
+        // lt_spc: lt_spc {
+        //     label = "ZB_lt_spc";
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     flavor = "balanced";
+        //     tapping-term-ms = <200>;
+        //     quick-tap-ms = <175>;
+        //     bindings = <&mo>, <&spc_morph>;
+        // };
         
         spc_morph: spc_morph {
             label = "ZB_spc_morph";
@@ -319,7 +319,7 @@
                 &kp Q         &kp W        &kp F          &kp P         &kp B           &kp J         &kp L         &kp U         &kp Y         &kp SQT
                 &hml LGUI A   &hml LALT R  &hml LSHFT S   &hml LCTRL T  &kp G           &kp M         &hmr RCTRL N  &hmr RSHFT E  &hmr RALT I   &hmr RGUI O
                 &kp Z         &kp X        &kp C          &kp D         &kp V           &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
-                                                          &sl 1       &smart_shift    &lt_spc 4  &sl 2
+                                                          &sl 1       &smart_shift    &kp SPACE  &sl 2
             >; 
         }; 
 
