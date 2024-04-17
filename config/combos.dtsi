@@ -13,6 +13,9 @@
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
 
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
+
 #define HRC_TAB    &hml         LA(LCTRL) TAB
 #define HRC_REPEAT &hml_repeat  LS(LCTRL) 0
 
