@@ -30,12 +30,10 @@ ZMK_COMBO(cut,   &kp LC(X),     LB3 LB1,     DEF SYM EXT NUM, COMBO_TERM_FAST, C
 ZMK_COMBO(copy,  &kp LC(INS),   LB3 LB2,     DEF SYM EXT NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(paste, &kp LS(INS),   LB2 LB1,     DEF SYM EXT NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
-ZMK_COMBO(l_set_layer, &mo SET,       LH0 LH1,     DEF SYM EXT NUM FUNC GAM GAM_SYM, COMBO_TERM_FAST)
 
 /* Horizontal combos - right hand */
 ZMK_COMBO(bspc,        &kp BSPC,      RT1 RT2,     DEF SYM EXT NUM,                  COMBO_TERM_FAST)
 ZMK_COMBO(del,         &kp DEL,       RT2 RT3,     DEF SYM EXT NUM,                  COMBO_TERM_FAST)
-ZMK_COMBO(r_set_layer, &mo SET,       RH0 RH1,     DEF SYM EXT NUM FUNC GAM GAM_SYM, COMBO_TERM_FAST)
 
 
 ZMK_COMBO(lpar,  HRC_LPAR,      RM1 RM2,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
