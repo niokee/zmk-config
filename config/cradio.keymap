@@ -181,10 +181,15 @@ ZMK_BEHAVIOR(bt_switch_2, macro,
      tap-ms = <5>;
      bindings = <&bt BT_SEL 2 &to MAC_DEF>;
 )
-ZMK_BEHAVIOR(bt_switch_0, macro, 
+ZMK_BEHAVIOR(bt_switch_3, macro, 
      wait-ms = <100>;
      tap-ms = <5>;
      bindings = <&bt BT_SEL 3 &to DEF>;
+)
+ZMK_BEHAVIOR(bt_switch_4, macro, 
+     wait-ms = <100>;
+     tap-ms = <5>;
+     bindings = <&bt BT_SEL 4 &to DEF>;
 )
 
 /* Keymap */
