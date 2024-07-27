@@ -169,22 +169,22 @@ ZMK_BEHAVIOR(dot_spc, macro,
 ZMK_BEHAVIOR(bt_switch_0, macro, 
      wait-ms = <100>;
      tap-ms = <5>;
-     bindings = <&bt BT_SEL 0 &to DEF>
+     bindings = <&bt BT_SEL 0 &to DEF>;
 )
 ZMK_BEHAVIOR(bt_switch_1, macro, 
      wait-ms = <100>;
      tap-ms = <5>;
-     bindings = <&bt BT_SEL 1 &to DEF>
+     bindings = <&bt BT_SEL 1 &to DEF>;
 )
 ZMK_BEHAVIOR(bt_switch_2, macro, 
      wait-ms = <100>;
      tap-ms = <5>;
-     bindings = <&bt BT_SEL 2 &to MAC_DEF>
+     bindings = <&bt BT_SEL 2 &to MAC_DEF>;
 )
 ZMK_BEHAVIOR(bt_switch_0, macro, 
      wait-ms = <100>;
      tap-ms = <5>;
-     bindings = <&bt BT_SEL 3 &to DEF>
+     bindings = <&bt BT_SEL 3 &to DEF>;
 )
 
 /* Keymap */
