@@ -82,8 +82,6 @@ ZMK_BEHAVIOR(mt_end,  hold_tap,  bindings = <&masked_end>, <&kp>; MT_CORE)
 
 #define NAV_LEFT  &mt_home 0   LEFT    // tap: left  | long-tap: beginning of line
 #define NAV_RIGHT &mt_end 0    RIGHT   // tap: right | long-tap: end       of line
-#define NAV_UP    &mt LC(HOME) UP      // tap: up    | long-tap: beginning of document
-#define NAV_DOWN  &mt LC(END)  DOWN    // tap: down  | long-tap: end       of document
 #define NAV_BSPC  &mt LC(BSPC) BSPC    // tap: bspc  | long-tap: delete word backward
 #define NAV_DEL   &mt LC(DEL)  DEL     // tap: del   | long-tap: delete word forward
     
@@ -157,12 +155,6 @@ ZMK_BEHAVIOR(lt_spc, hold_tap,
     quick-tap-ms = <QUICK_TAP_MS>;
     bindings = <&mo>, <&spc_morph>;
 )
-SIMPLE_MORPH(spc_morph, SFT, &kp SPACE, &dot_spc)
-ZMK_BEHAVIOR(dot_spc, macro,
-    wait-ms = <0>;
-    tap-ms = <5>;
-    bindings = <&kp DOT &kp SPACE &sk LSHFT>;
-)
 
 /* Keymap */
 ZMK_LAYER(base,
@@ -180,11 +172,11 @@ ZMK_LAYER(base,
 
 ZMK_LAYER(ext,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    ___           ___           ___           ___           ___             &kp PAGE_DOWN NAV_BSPC      &kp TAB       NAV_DEL       &kp ENTER
+    ___           ___           &kp LT        &kp GT        ___             ___           NAV_BSPC      &kp TAB       NAV_DEL       &kp ENTER
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     ___             &kp PAGE_UP   NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    ___           ___           ___           ___           ___             &kp INS       ___           &kp LT        &kp GT        ___   
+    ___           ___           &kp AMPR      &kp PIPE      ___             ___           &kp LBRC      &kp RBRC      ___           ___   
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                               ___           ___             ___           &kp K_CANCEL
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
@@ -195,11 +187,11 @@ ZMK_LAYER(num,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6        &kp N7        &kp N8        &kp N9        &kp N0
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    ___           ___           ___           ___           ___             ___           &hmr RCTRL LEFT   &hmr RSHIFT DOWN  &hmr RALT UP &hmr RGUI RIGHT
+    &kp LG(N1)    &kp LG(N2)    &kp LG(N3)    &kp LG(N4)    &kp LG(N5)      ___           &hmr RCTRL LEFT   &hmr RSHIFT DOWN  &hmr RALT UP &hmr RGUI RIGHT
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    ___           ___           ___           ___           ___             ___           ___           ___           ___           ___
+    &kp LS(LG(N1)) &kp LS(LG(N2)) &kp LS(LG(N3)) &kp LS(LG(N4)) &kp LS(LG(N5)) ___        ___           ___           ___           ___
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              &sk LGUI      ___             ___           &kp K_CANCEL
+                                              &sk LA(LCTRL)  ___             ___          &kp K_CANCEL
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
