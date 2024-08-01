@@ -149,11 +149,10 @@ SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LT)
 SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
 
 // tap: space | hold: activate layer
-ZMK_BEHAVIOR(ht_spc, hold_tap,
+ZMK_HOLD_TAP(ht,
     flavor = "balanced";
-    tapping-term-ms = <200>;
     quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&mo>, <&kp SPACE>;
+    bindings = <&mo>, <&kp>;
 )
 
 /* Keymap */
@@ -165,7 +164,7 @@ ZMK_LAYER(base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp Z         &kp X        &kp C          &kp D         &kp V           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              SMART_NUM     &smart_shift    &ht_spc FUNC      &sl EXT
+                                              SMART_NUM     &smart_shift    &ht FUNC SPACE &sl EXT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
