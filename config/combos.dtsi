@@ -20,7 +20,7 @@ ZMK_COMBO(gam_layer, &tog GAM, RB3 RB4, DEF EXT NUM FUNC GAM, COMBO_TERM_SLOW)
 /* Horizontal combos - left hand */
 ZMK_COMBO(esc,    &kp ESC,       LT3 LT2,     DEF EXT NUM GAM, COMBO_TERM_FAST)
 ZMK_COMBO(ret,    &kp RETURN,    LT2 LT1,     DEF EXT NUM GAM, COMBO_TERM_FAST)
-ZMK_COMBO(del,    &kp DEL,       LM2 LM1,     DEF EXT NUM GAM, COMBO_TERM_FAST)
+ZMKKCOMBO(del_l,  &kp DEL,       LM2 LM1,     DEF EXT NUM GAM, COMBO_TERM_FAST)
 
 ZMK_COMBO(cut,    &kp LC(X),     LB3 LB1,     DEF EXT NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(copy,   &kp LC(C),     LB3 LB2,     DEF EXT NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
@@ -28,7 +28,7 @@ ZMK_COMBO(paste,  &kp LC(V),     LB2 LB1,     DEF EXT NUM, COMBO_TERM_FAST, COMB
 
 /* Horizontal combos - right hand */
 ZMK_COMBO(bspc,     &kp BSPC,      RT1 RT2,     DEF EXT NUM GAM, COMBO_TERM_FAST)
-ZMK_COMBO(del,      &kp DEL,       RT2 RT3,     DEF EXT NUM GAM, COMBO_TERM_FAST)
+ZMK_COMBO(del_r,    &kp DEL,       RT2 RT3,     DEF EXT NUM GAM, COMBO_TERM_FAST)
 
 /* Vertical combos - left hand */
 ZMK_COMBO(at,    &kp AT,         LT3 LM3,     DEF EXT NUM GAM, COMBO_TERM_SLOW)  
