@@ -83,8 +83,8 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BSPC, h: Ctl+ BSPC}
-  - {t: DEL, h: Ctl+ DEL}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - AGr+ N
@@ -171,7 +171,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - gam_sym_1
+  - {t: ▽, type: trans}
   - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -186,7 +186,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: LSHF, h: sticky}
+  - {t: LSHFT, h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -206,7 +206,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -219,9 +219,6 @@ combos:
   l: [base, ext, num, gam]
 - p: [2, 3]
   k: RETURN
-  l: [base, ext, num, gam]
-- p: [12, 13]
-  k: DEL
   l: [base, ext, num, gam]
 - p: [21, 23]
   k: Ctl+ X
