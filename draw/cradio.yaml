@@ -32,65 +32,33 @@ layers:
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - {t: '&num_dance', h: num}
-  - {t: SPACE, h: func}
+  - {t: SPACE, h: pol}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
   - {t: ext, h: sticky}
   ext:
-  - '`'
-  - '~'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - AGr+ L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - AGr+ A
   - {t: ▽, type: trans}
-  - AGr+ S
-  - '&'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: LEFT, h: HOME}
   - DOWN
   - UP
   - {t: RIGHT, h: END}
-  - AGr+ Z
-  - AGr+ X
-  - AGr+ C
-  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: CANCEL, type: held}
-  num:
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - AGr+ N
-  - AGr+ E
-  - {t: ▽, type: trans}
-  - AGr+ O
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -102,9 +70,76 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  num:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Gui+ 1
+  - Gui+ 2
+  - Gui+ 3
+  - Gui+ 4
+  - Gui+ 5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CANCEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Alt+Gui+ 1
+  - Alt+Gui+ 2
+  - Alt+Gui+ 3
+  - Alt+Gui+ 4
+  - Alt+Gui+ 5
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  pol:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - AGr+ L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - AGr+ A
+  - {t: ▽, type: trans}
+  - AGr+ S
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - AGr+ N
+  - AGr+ E
+  - {t: ▽, type: trans}
+  - AGr+ O
+  - AGr+ Z
+  - AGr+ X
+  - AGr+ C
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   func:
   - F1
   - F2
@@ -118,8 +153,8 @@ layers:
   - F10
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - MUTE
+  - PLAY PAUSE
   - F11
   - F12
   - PREV
@@ -136,10 +171,10 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - BT CLR
+  - {type: held}
   - {t: ▽, type: trans}
-  - {t: MUTE, type: held}
   - {t: ▽, type: trans}
-  - PLAY PAUSE
+  - {type: held}
   gam:
   - Q
   - W
@@ -171,11 +206,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: gam_sym, h: sticky}
   - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  gam_sym_1:
+  gam_sym:
   - '1'
   - '2'
   - '3'
@@ -206,7 +241,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -219,6 +254,9 @@ combos:
   l: [base, ext, num, gam]
 - p: [2, 3]
   k: RETURN
+  l: [base, ext, num, gam]
+- p: [12, 13]
+  k: DEL
   l: [base, ext, num, gam]
 - p: [21, 23]
   k: Ctl+ X
@@ -239,10 +277,10 @@ combos:
   k: '@'
   l: [base, ext, num, gam]
 - p: [2, 12]
-  k: '#'
+  k: {t: '#', s: '&'}
   l: [base, ext, num, gam]
 - p: [3, 13]
-  k: $
+  k: {t: $, s: '~'}
   l: [base, ext, num, gam]
 - p: [4, 14]
   k: '%'
@@ -251,10 +289,10 @@ combos:
   k: \
   l: [base, ext, num, gam]
 - p: [12, 22]
-  k: '='
+  k: {t: '=', s: '|'}
   l: [base, ext, num, gam]
 - p: [13, 23]
-  k: +
+  k: {t: +, s: '`'}
   l: [base, ext, num, gam]
 - p: [14, 24]
   k: '-'
