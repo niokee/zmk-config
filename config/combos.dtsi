@@ -14,12 +14,6 @@
 #define COMBO_IDLE_FAST 150
 #define COMBO_IDLE_SLOW 50
 
-// make homerow combos tap-only (so HRMs can be chorded instantaneously)
-#define HRC_TAB    &hml         LA(LCTRL) TAB
-#define HRC_REPEAT &hml_repeat  LS(LCTRL) 0
-#define HRC_LPAR   &hmr_lpar_lt RS(LALT) 0
-#define HRC_RPAR   &hmr_rpar_gt RS(LCTRL) 0
-
 /* Gaming layer */
 ZMK_COMBO(gam_layer, &tog GAM, RB3 RB4, DEF EXT NUM FUNC GAM, COMBO_TERM_SLOW)
 
@@ -32,15 +26,9 @@ ZMK_COMBO(cut,    &kp LC(X),     LB3 LB1,     DEF EXT NUM, COMBO_TERM_FAST, COMB
 ZMK_COMBO(copy,   &kp LC(C),     LB3 LB2,     DEF EXT NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(paste,  &kp LC(V),     LB2 LB1,     DEF EXT NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 
-ZMK_COMBO(pol_l,    &sl UC,        LT3 LT1,     DEF EXT NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(cppol_l,  &sls 0,        LT3 LT2 LT1, DEF EXT NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
 /* Horizontal combos - right hand */
 ZMK_COMBO(bspc,     &kp BSPC,      RT1 RT2,     DEF EXT NUM GAM, COMBO_TERM_FAST)
 ZMK_COMBO(del,      &kp DEL,       RT2 RT3,     DEF EXT NUM GAM, COMBO_TERM_FAST)
-
-ZMK_COMBO(pol_r,    &sl UC,        RT1 RT3,     DEF EXT NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(cppol_r,  &sls 0,        RT1 RT2 RT3, DEF EXT NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /* Vertical combos - left hand */
 ZMK_COMBO(at,    &kp AT,         LT3 LM3,     DEF EXT NUM GAM, COMBO_TERM_SLOW)  
