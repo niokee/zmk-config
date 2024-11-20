@@ -105,19 +105,6 @@ ZMK_MOD_MORPH(smart_shft,
     /delete-property/ ignore-modifiers;
 };
 
-// tap: num-word | double-tap: sticky num-layer | hold: num-layer
-#define SMART_NUM &smart_num NUM 0
-ZMK_HOLD_TAP(smart_num,
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&mo>, <&num_dance>;
-)
-ZMK_TAP_DANCE(num_dance,
-    tapping-term-ms = <200>;
-    bindings = <&num_word NUM>, <&sl NUM>;  // reverse this for sticky-num on single tap
-)
-
 // reuse basic mod-morph scheme
 #define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
     ZMK_MOD_MORPH(NAME, \
@@ -172,7 +159,7 @@ ZMK_LAYER(base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp Z         &kp X        &kp C          &kp D         &kp V           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              SMART_NUM     &ht_spc POL SPACE &smart_shft &sl EXT
+                                              &sl NUM       &ht_spc POL SPACE &smart_shft &sl EXT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
@@ -181,7 +168,7 @@ ZMK_LAYER(ext,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     ___           ___           ___           ___           ___             ___           ___           &kp TAB       ___           ___
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI RA(A)     ___           &hml LSHFT RA(S)     ___           ___             ___           NAV_LEFT      &kp DOWN      &kp UP        NAV_RIGHT
+    &hml LGUI RA(A) ___         &hml LSHFT RA(S) ___        ___             ___           NAV_LEFT      &kp DOWN      &kp UP        NAV_RIGHT
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp RA(Z)     &kp RA(X)     &kp RA(C)     ___           ___             ___           ___           ___           ___           ___
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
