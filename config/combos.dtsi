@@ -27,10 +27,12 @@ ZMK_COMBO(copy,   &kp LC(C),     LB3 LB2,     DEF EXT NUM, COMBO_TERM_FAST, COMB
 ZMK_COMBO(paste,  &kp LC(V),     LB2 LB1,     DEF EXT NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST) 
 
 /* Horizontal combos - right hand */
-ZMK_COMBO(bspc,     &kp BSPC,      RT1 RT2,     DEF EXT NUM GAM, COMBO_TERM_FAST)
-ZMK_COMBO(del_r,    &kp DEL,       RT2 RT3,     DEF EXT NUM GAM, COMBO_TERM_FAST)
+ZMK_COMBO(bspc,   &kp BSPC,      RT1 RT2,     DEF EXT NUM GAM, COMBO_TERM_FAST)
+ZMK_COMBO(del_r,  &kp DEL,       RT2 RT3,     DEF EXT NUM GAM, COMBO_TERM_FAST)
 
 /* Vertical combos - left hand */
+ZMK_COMBO(grave, &kp GRAVE,      LM4 LB4,     DEF EXT NUM GAM, COMBO_TERM_SLOW)  
+ZMK_COMBO(tilde, &kp TILDE,      LT4 LM4,     DEF EXT NUM GAM, COMBO_TERM_SLOW)  
 ZMK_COMBO(at,    &kp AT,         LT3 LM3,     DEF EXT NUM GAM, COMBO_TERM_SLOW)  
 ZMK_COMBO(hash,  &hash_amps,     LT2 LM2,     DEF EXT NUM GAM, COMBO_TERM_SLOW)
 ZMK_COMBO(dllr,  &dllr_tilde,    LT1 LM1,     DEF EXT NUM GAM, COMBO_TERM_SLOW)
@@ -46,6 +48,8 @@ ZMK_COMBO(caret, &kp CARET,      RT0 RM0,     DEF EXT NUM GAM, COMBO_TERM_SLOW)
 ZMK_COMBO(lpar,  &lpar_lt,       RT1 RM1,     DEF EXT NUM GAM, COMBO_TERM_SLOW)
 ZMK_COMBO(rpar,  &rpar_gt,       RT2 RM2,     DEF EXT NUM GAM, COMBO_TERM_SLOW)
 ZMK_COMBO(star,  &kp STAR,       RT3 RM3,     DEF EXT NUM GAM, COMBO_TERM_SLOW)
+ZMK_COMBO(amp,   &kp AMPS,       RT4 RM4,     DEF EXT NUM GAM, COMBO_TERM_SLOW)
+ZMK_COMBO(pipe,  &kp PIPE,       RM4 RB4,     DEF EXT NUM GAM, COMBO_TERM_SLOW)
 
 ZMK_COMBO(under, &kp UNDER,      RM0 RB0,     DEF EXT NUM GAM, COMBO_TERM_SLOW)
 ZMK_COMBO(lbkt,  &kp LBKT,       RM1 RB1,     DEF EXT NUM GAM, COMBO_TERM_SLOW)
